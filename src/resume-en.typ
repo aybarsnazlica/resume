@@ -22,7 +22,7 @@
 #let muted = rgb("#6b6b6b")
 
 #let heading(title, gap: 2pt) = [
-  #set text(size: 10pt, weight: "bold", fill: accent)
+  #set text(size: 11pt, weight: "bold", fill: accent)
   #title
   #v(gap)
 ]
@@ -104,7 +104,7 @@
 ]
 
 #let left-column = [
-  #v(1.5pt)
+  #v(2pt)
   #set text(size: 9pt, fill: muted)
   Sapporo, Hokkaido, JAPAN
   #v(5pt)
@@ -123,33 +123,37 @@
     [SKILLS],
     (
       ("Programming Languages:", ("Python", "Java", "SQL", "Rust")),
-      ("Data & Machine Learning:", (
-        "Spark",
-        "Iceberg",
-        "Trino",
-        "dbt",
-        "Airflow",
-        "Data Modeling",
-        "PyTorch",
-        "LangGraph",
-      )),
-      ("Infrastructure & Backend", (
-        "AWS",
-        "Linux",
-        "Docker",
-        "Kubernetes",
-        "Spring Boot",
-        "FastAPI",
-        "Shell Scripting",
-      )),
+      (
+        "Data & Machine Learning:",
+        (
+          "Spark",
+          "Iceberg",
+          "Trino",
+          "dbt",
+          "Airflow",
+          "Data Modeling",
+          "PyTorch",
+          "LangGraph",
+        ),
+      ),
+      (
+        "Infrastructure & Backend",
+        (
+          "AWS",
+          "Linux",
+          "Docker",
+          "Kubernetes",
+          "Spring Boot",
+          "FastAPI",
+          "Shell Scripting",
+        ),
+      ),
       ("Databases:", ("PostgreSQL",)),
       ("DevOps & Observability:", ("Github Actions", "Prometheus", "Grafana")),
     ),
   )
 
-  #v(-3pt)
   #sidebar-rule
-  #v(4pt)
   #heading([LANGUAGES], gap: 1pt)
   #set text(size: 9pt, fill: muted)
   #sidebar-list((
@@ -165,7 +169,7 @@
 ]
 
 #let experience = [
-  #role([Data Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
+  #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
   #bullets((
     [Built a production-grade data lakehouse (Spark, Iceberg, dbt, Trino) processing hundreds of millions of records, enabling unified analytics and machine learning workloads],
     [Reduced query latency by 10x through partitioning strategies, query optimization, and storage design],
@@ -202,9 +206,9 @@
 ]
 
 #let right-column = [
-  #v(1.5pt)
+  #v(2pt)
   #main-section([PROFILE], [
-    Data engineer specializing in large-scale data platforms, distributed systems, and MLOps infrastructure. Built production lakehouse architectures and high-throughput systems processing hundreds of millions of records, with experience developing scalable ETL pipelines and developer platforms.
+    Software engineer specializing in distributed systems, backend development, and data platforms. Experienced in building scalable APIs, orchestration systems, and MLOps infrastructure on cloud-native environments. Proven track record of designing high-throughput systems processing hundreds of millions of records and developing platforms for machine learning and data workflows.
   ])
 
   #v(5pt)
@@ -224,8 +228,7 @@
         columns: (112pt, 1fr),
         column-gutter: 12pt,
         align: (left, top),
-        [#box(height: 100%)[#left-column]],
-        [#box(height: 100%)[#right-column]],
+        [#box(height: 100%)[#left-column]], [#box(height: 100%)[#right-column]],
       )
     ],
   )
