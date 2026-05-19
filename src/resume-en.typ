@@ -114,8 +114,13 @@
   ]
   #v(5pt)
 
+  #link("https://aybarsnazlica.github.io")[
+    #underline([#text("aybarsnazlica.github.io")])
+  ]
+  #v(5pt)
+
   #link("https://github.com/aybarsnazlica")[
-    #underline([#text("https://github.com/aybarsnazlica")])
+    #underline([#text("github.com/aybarsnazlica")])
   ]
 
   #sidebar-rule
@@ -145,11 +150,10 @@
           "Airflow",
           "Data Modeling",
           "PyTorch",
-          "LangGraph",
         ),
       ),
       ("Databases:", ("PostgreSQL", "Redis")),
-      ("DevOps & Observability:", ("Github Actions", "Prometheus", "Grafana")),
+      ("DevOps & Observability:", ("Github Actions", "Prometheus")),
     ),
   )
 
