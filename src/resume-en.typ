@@ -175,19 +175,17 @@
 #let experience = [
   #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
   #bullets((
-    [Built a production-grade data lakehouse (Spark, Iceberg, dbt, Trino) processing hundreds of millions of records, enabling unified analytics and machine learning workloads],
-    [Reduced query latency by 10x through partitioning strategies, query optimization, and storage design],
-    [Designed scalable data models for identity tracking, deduplication, and versioning used across analytics and ML workflows],
-    [Developed and maintained high-throughput ETL/ELT pipelines (Airflow, Python), reducing data preparation time from days to hours],
-    [Designed and built backend services and REST APIs using Spring Boot and FastAPI for managing datasets, metadata, and model artifacts],
-    [Modeled and managed relational data in PostgreSQL, optimizing queries and schema design for performance and consistency],
-    [Developed an internal ML experiment tracking platform, replacing ad hoc notebook workflows with a centralized and reproducible system],
-    [Built a data processing pipeline with parallel execution, improving throughput by 30x and reducing infrastructure costs],
-    [Developed a multithreaded bioinformatics application in Rust, achieving 25x speedup and 35% lower memory usage compared to the Python implementation],
-    [Designed and operated a GPU-based inference platform for ML workloads],
-    [Built backend components for job orchestration, execution, and lifecycle management],
-    [Automated infrastructure using AWS, Docker, and Kubernetes, improving system reliability and cost efficiency],
-    [Integrated an AI agent into the internal data platform, improving developer productivity and workflow automation],
+    [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for unified analytics and ML workloads],
+    [Reduced lakehouse query latency by 10x through partitioning strategy, storage layout, and query optimization],
+    [Built Spring Boot ingestion services that discovered project datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
+    [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
+    [Built an internal data and experiment tracking platform with FastAPI and PostgreSQL for managing datasets, metadata, model experiments, predictions, and artifacts],
+    [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
+    [Developed an NGS data processing pipeline and bioinformatics CLI stack spanning Python, Airflow, Docker, and Rust, reducing data preparation time from days to hours],
+    [Increased pipeline throughput by 30x with parallel execution and lower infrastructure cost],
+    [Developed a multithreaded Rust bioinformatics application, achieving 25x speedup and 35% lower memory usage than the Python implementation],
+    [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
+    [Built an internal AI agent with a chat interface and tool-using workflow for querying company knowledge and improving developer productivity],
   ))
 
   #v(1.5pt)
@@ -212,7 +210,7 @@
 #let right-column = [
   #v(2pt)
   #main-section([PROFILE], [
-    Software engineer specializing in distributed systems, backend development, and data platforms. Experienced in building scalable APIs, orchestration systems, and MLOps infrastructure on cloud-native environments. Proven track record of designing high-throughput systems processing hundreds of millions of records and developing platforms for machine learning and data workflows.
+    Software engineer specializing in backend platforms, data infrastructure, and ML systems. Experienced in architecting data lakehouses, scalable APIs, orchestration workflows, and cloud-native infrastructure on AWS and Kubernetes. Proven track record of building internal platforms, improving performance by orders of magnitude, and delivering high-throughput systems for data and machine learning workloads.
   ])
 
   #v(5pt)
