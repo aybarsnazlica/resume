@@ -176,16 +176,16 @@
   #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
   #bullets((
     [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for unified analytics and ML workloads],
-    [Reduced lakehouse query latency by 10x through partitioning strategy, storage layout, and query optimization],
+    [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
     [Built Spring Boot ingestion services that discovered project datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
     [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
     [Built an internal data and experiment tracking platform with FastAPI and PostgreSQL for managing datasets, metadata, model experiments, predictions, and artifacts],
     [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
-    [Developed an NGS data processing pipeline and bioinformatics CLI stack spanning Python, Airflow, Docker, and Rust, reducing data preparation time from days to hours],
-    [Increased pipeline throughput by 30x with parallel execution and lower infrastructure cost],
-    [Developed a multithreaded Rust bioinformatics application, achieving 25x speedup and 35% lower memory usage than the Python implementation],
+    [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours],
+    [Increased pipeline throughput by 30x with parallel execution and lowered infrastructure costs],
+    [Developed a multithreaded bioinformatics application in Rust, achieving 25x speedup and 35% lower memory usage than the Python implementation],
     [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
-    [Built an internal AI agent with a chat interface and tool-using workflow for querying company knowledge and improving developer productivity],
+    [Built an internal AI agent with a chat interface and tool-enabled workflow for querying company knowledge and improving developer productivity],
   ))
 
   #v(1.5pt)
