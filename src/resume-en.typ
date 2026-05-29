@@ -127,7 +127,7 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "Java", "TypeScript", "SQL", "Rust")),
+      ("Programming Languages:", ("Python", "Java", "SQL", "TypeScript", "Rust")),
       (
         "Infrastructure & Backend",
         (
@@ -137,7 +137,6 @@
           "Kubernetes",
           "Spring Boot",
           "FastAPI",
-          "Shell Scripting",
         ),
       ),
       (
@@ -152,7 +151,7 @@
           "PyTorch",
         ),
       ),
-      ("Databases:", ("PostgreSQL", "Redis")),
+      ("Databases:", ("PostgreSQL",)),
       ("DevOps & Observability:", ("Github Actions", "Prometheus")),
     ),
   )
