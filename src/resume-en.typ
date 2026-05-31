@@ -46,7 +46,7 @@
   #v(0.5pt)
 ]
 
-#let bullets(items) = {
+#let bullets(items, gap: 1pt) = {
   for item in items [
     #grid(
       columns: (7pt, 1fr),
@@ -58,7 +58,7 @@
       ],
       [#item],
     )
-    #v(1pt)
+    #v(gap)
   ]
 }
 
@@ -127,7 +127,7 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "Java", "SQL", "TypeScript", "Rust")),
+      ("Programming Languages:", ("Python", "Java", "TypeScript", "SQL", "Rust")),
       (
         "Infrastructure & Backend",
         (
@@ -135,8 +135,8 @@
           "Linux",
           "Docker",
           "Kubernetes",
-          "Spring Boot",
           "FastAPI",
+          "Spring Boot",
         ),
       ),
       (
@@ -147,7 +147,6 @@
           "Trino",
           "dbt",
           "Airflow",
-          "Data Modeling",
           "PyTorch",
         ),
       ),
@@ -173,26 +172,32 @@
 
 #let experience = [
   #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
-  #bullets((
-    [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for unified analytics and ML workloads],
-    [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
-    [Built Spring Boot ingestion services that discovered project datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
-    [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
-    [Built an internal data and experiment tracking platform with FastAPI and PostgreSQL for managing datasets, metadata, model experiments, predictions, and artifacts],
-    [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
-    [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours],
-    [Increased pipeline throughput by 30x with parallel execution and lowered infrastructure costs],
-    [Developed a multithreaded bioinformatics application in Rust, achieving 25x speedup and 35% lower memory usage than the Python implementation],
-    [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
-    [Built an internal AI agent with a chat interface and tool-enabled workflow for querying company knowledge and improving developer productivity],
-  ))
+  #bullets(
+    (
+      [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
+      [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
+      [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
+      [Built Spring Boot ingestion services that discovered datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
+      [Built backend services, APIs, and user-facing platform features with FastAPI, PostgreSQL, TypeScript, and React for dataset discovery, metadata management, and model experiment access],
+      [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
+      [Built MLOps workflows for experiment tracking, model artifact management, and reproducible inference, centralizing predictions and run outputs in a unified internal platform],
+      [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
+      [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
+      [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
+      [Developed a multithreaded bioinformatics application in Rust, achieving 25x speedup and 35% lower memory usage than the Python implementation],
+    ),
+    gap: 0.1pt,
+  )
 
   #v(1.5pt)
   #role([Data Scientist, MOLCURE Inc., Tokyo, Japan], [2022 - 2023])
-  #bullets((
-    [Fine-tuned ESM-based Transformer models for sequence classification tasks],
-    [Developed embedding generation and visualization workflows using fine-tuned protein language models for downstream analysis and exploration],
-  ))
+  #bullets(
+    (
+      [Fine-tuned ESM-based Transformer models for sequence classification tasks],
+      [Developed embedding generation and visualization workflows using fine-tuned protein language models for downstream analysis and exploration],
+    ),
+    gap: 0.1pt,
+  )
 
   #v(1.5pt)
   #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
@@ -209,20 +214,21 @@
 #let right-column = [
   #v(2pt)
   #main-section([PROFILE], [
+    #set par(leading: 0.5em)
     Software engineer specializing in backend platforms, data infrastructure, and ML systems. Experienced in architecting data lakehouses, scalable APIs, orchestration workflows, and cloud-native infrastructure on AWS and Kubernetes. Proven track record of building internal platforms, improving performance by orders of magnitude, and delivering high-throughput systems for data and machine learning workloads.
   ])
 
-  #v(5pt)
+  #v(3pt)
   #main-section([EXPERIENCE], [#experience])
 
-  #v(5pt)
+  #v(3pt)
   #main-section([EDUCATION], [#education])
 ]
 
 #let resume = [
   #grid(
     rows: (auto, 1fr),
-    row-gutter: 8pt,
+    row-gutter: 6pt,
     [#header],
     [
       #grid(
