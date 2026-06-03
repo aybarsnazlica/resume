@@ -104,7 +104,7 @@
 ]
 
 #let left-column = [
-  #v(2pt)
+  #v(10pt)
   #set text(size: 9pt, fill: muted)
   Sapporo, Hokkaido, JAPAN
   #v(5pt)
@@ -127,31 +127,37 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "Java", "TypeScript", "SQL", "Rust")),
+      ("Programming Languages:", ("Python", "Java", "TypeScript")),
       (
-        "Infrastructure & Backend",
+        "Infrastructure:",
         (
           "AWS",
           "Linux",
           "Docker",
           "Kubernetes",
+          "Bash",
+        ),
+      ),
+      (
+        "Backend:",
+        (
           "FastAPI",
           "Spring Boot",
         ),
       ),
       (
-        "Data & Machine Learning:",
+        "Data Engineering:",
         (
           "Spark",
           "Iceberg",
           "Trino",
           "dbt",
           "Airflow",
-          "PyTorch",
         ),
       ),
-      ("Databases:", ("PostgreSQL",)),
-      ("DevOps & Observability:", ("Github Actions", "Prometheus")),
+      ("Databases:", ("SQL", "PostgreSQL")),
+      ("Machine Learning:", ("PyTorch",)),
+      ("CI/CD & Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
   )
 
@@ -184,7 +190,6 @@
       [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
       [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
-      [Developed a multithreaded bioinformatics application in Rust, achieving 25x speedup and 35% lower memory usage than the Python implementation],
     ),
     gap: 0.1pt,
   )
@@ -212,7 +217,7 @@
 ]
 
 #let right-column = [
-  #v(2pt)
+  #v(10pt)
   #main-section([PROFILE], [
     #set par(leading: 0.5em)
     Software engineer specializing in backend platforms, data infrastructure, and ML systems. Experienced in architecting data lakehouses, scalable APIs, orchestration workflows, and cloud-native infrastructure on AWS and Kubernetes. Proven track record of building internal platforms, improving performance by orders of magnitude, and delivering high-throughput systems for data and machine learning workloads.
