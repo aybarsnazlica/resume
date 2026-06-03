@@ -176,7 +176,7 @@
     (
       [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
       [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
-      [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
+      [Reduced lakehouse query latency by 15x through partitioning strategies, storage layout, and query optimization],
       [Built Spring Boot ingestion services that discovered datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
       [Built backend services, APIs, and user-facing platform features with FastAPI, PostgreSQL, TypeScript, and React for dataset discovery, metadata management, and model experiment access],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
