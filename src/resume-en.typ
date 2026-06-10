@@ -127,7 +127,16 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "Java", "TypeScript")),
+      ("Programming Languages:", ("Python", "TypeScript", "Java")),
+      (
+        "Backend:",
+        (
+          "FastAPI",
+          "Spring Boot",
+        ),
+      ),
+      ("Frontend:", ("React",)),
+      ("Databases:", ("SQL", "PostgreSQL")),
       (
         "Infrastructure:",
         (
@@ -136,13 +145,6 @@
           "Docker",
           "Kubernetes",
           "Bash",
-        ),
-      ),
-      (
-        "Backend:",
-        (
-          "FastAPI",
-          "Spring Boot",
         ),
       ),
       (
@@ -155,8 +157,6 @@
           "Airflow",
         ),
       ),
-      ("Databases:", ("SQL", "PostgreSQL")),
-      ("Machine Learning:", ("PyTorch",)),
       ("CI/CD & Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
   )
@@ -184,11 +184,11 @@
       [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
       [Reduced lakehouse query latency by 15x through partitioning strategies, storage layout, and query optimization],
       [Built Spring Boot ingestion services that discovered datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
-      [Built backend services, APIs, and user-facing platform features with FastAPI, PostgreSQL, TypeScript, and React for dataset discovery, metadata management, and model experiment access],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
-      [Built MLOps workflows for experiment tracking, model artifact management, and reproducible inference, centralizing predictions and run outputs in a unified internal platform],
-      [Implemented backend workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
+      [Built frontend and backend services for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference launch with live log streaming],
+      [Implemented MLOps workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
       [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
+      [Built AI and agent applications with Python and chat-based interfaces, enabling users to query structured knowledge sources in natural language],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
     ),
     gap: 0.1pt,
@@ -199,13 +199,18 @@
   #bullets(
     (
       [Fine-tuned ESM-based Transformer models for sequence classification tasks],
-      [Developed embedding generation and visualization workflows using fine-tuned protein language models for downstream analysis and exploration],
     ),
     gap: 0.1pt,
   )
 
   #v(1.5pt)
   #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
+  #bullets(
+    (
+      [Provided patient care in emergency and family medicine departments],
+    ),
+    gap: 0.1pt,
+  )
 ]
 
 #let education = [
@@ -220,7 +225,7 @@
   #v(10pt)
   #main-section([PROFILE], [
     #set par(leading: 0.5em)
-    Software engineer specializing in backend platforms, data infrastructure, and ML systems. Experienced in architecting data lakehouses, scalable APIs, orchestration workflows, and cloud-native infrastructure on AWS and Kubernetes. Proven track record of building internal platforms, improving performance by orders of magnitude, and delivering high-throughput systems for data and machine learning workloads.
+    Software engineer with strong backend depth in data platforms, cloud infrastructure, and AI-enabled applications. Experienced in building user-facing products, scalable APIs, orchestration workflows, and cloud-native systems on AWS and Kubernetes. Proven track record of delivering internal platforms, improving performance by orders of magnitude, and supporting high-throughput data and machine learning workloads end to end.
   ])
 
   #v(3pt)
