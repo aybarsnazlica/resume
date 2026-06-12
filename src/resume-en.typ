@@ -128,6 +128,7 @@
     [SKILLS],
     (
       ("Programming Languages:", ("Python", "TypeScript", "Java")),
+      ("Frontend:", ("React",)),
       (
         "Backend:",
         (
@@ -135,12 +136,10 @@
           "Spring Boot",
         ),
       ),
-      ("Frontend:", ("React",)),
-      ("Databases:", ("SQL", "PostgreSQL")),
       (
-        "Infrastructure:",
+        "Cloud & Infrastructure:",
         (
-          "AWS",
+          "AWS (EC2, S3)",
           "Linux",
           "Docker",
           "Kubernetes",
@@ -150,6 +149,7 @@
       (
         "Data Engineering:",
         (
+          "PostgreSQL",
           "Spark",
           "Iceberg",
           "Trino",
