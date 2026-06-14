@@ -134,6 +134,7 @@
         (
           "FastAPI",
           "Spring Boot",
+          "Redis",
         ),
       ),
       (
