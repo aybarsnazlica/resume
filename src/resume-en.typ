@@ -72,7 +72,10 @@
         #set text(size: 9pt)
         #sym.bullet
       ],
-      [#item],
+      [
+        #set par(justify: false)
+        #item
+      ],
     )
     #v(0.25pt)
   ]
@@ -106,7 +109,7 @@
 #let left-column = [
   #v(10pt)
   #set text(size: 9pt, fill: muted)
-  Sapporo, Hokkaido, JAPAN
+  Sapporo, Hokkaido, Japan
   #v(5pt)
 
   #link("mailto:aybarsnazlica@gmail.com")[
@@ -123,20 +126,22 @@
     #underline([#text("github.com/aybarsnazlica")])
   ]
 
+  #v(15pt)
   #sidebar-rule
+  #v(15pt)
+
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "TypeScript", "Java")),
+      ("Programming Languages:", ("Python", "TypeScript", "SQL")),
       ("Frontend:", ("React",)),
       (
         "Backend:",
         (
           "FastAPI",
-          "Spring Boot",
-          "Redis",
         ),
       ),
+      ("Databases:", ("PostgreSQL",)),
       (
         "Cloud & Infrastructure:",
         (
@@ -148,26 +153,22 @@
         ),
       ),
       (
-        "Data Engineering:",
-        (
-          "PostgreSQL",
-          "Spark",
-          "Iceberg",
-          "Trino",
-          "dbt",
-          "Airflow",
-        ),
+        "Data Platform:",
+        ("Apache Iceberg", "Apache Spark", "Trino"),
       ),
-      ("CI/CD & Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
+      ("CI/CD:", ("GitHub Actions",)),
     ),
   )
 
+  #v(15pt)
   #sidebar-rule
+  #v(15pt)
+
   #heading([LANGUAGES], gap: 1pt)
   #set text(size: 9pt, fill: muted)
   #sidebar-list((
     "English (CEFR C1)",
-    "Japanese (JLPT N2)",
+    "Japanese (Business level, JLPT N2)",
     "Turkish (Native)",
   ))
 ]
@@ -182,14 +183,14 @@
   #bullets(
     (
       [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
-      [Architected a production-grade data lakehouse (Spark, Iceberg, Trino, dbt, S3, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
-      [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
-      [Built Spring Boot ingestion services that discovered datasets in S3, launched ephemeral Spark SQL jobs on Kubernetes, and landed normalized Iceberg tables for downstream analytics],
+      [Architected a production-grade data lakehouse (Amazon S3, Apache Iceberg, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
+      [Built data ingestion services that discovered datasets in Amazon S3, launched ephemeral Apache Spark SQL jobs on Kubernetes, and landed normalized Apache Iceberg tables for downstream analytics],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
-      [Built frontend and backend services for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference launch with live log streaming],
+      [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
+      [Built frontend (React) and backend (FastAPI) services for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
       [Implemented MLOps workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
-      [Developed a next-generation sequencing data processing pipeline with Python, Airflow, and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
-      [Built AI and agent applications with Python and chat-based interfaces, enabling users to query structured knowledge sources in natural language],
+      [Developed a next-generation sequencing data processing pipeline with Python and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
+      [Built AI and agent applications that enable users to query knowledge sources and run data analysis pipelines in natural language],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
     ),
     gap: 0.1pt,
@@ -199,7 +200,7 @@
   #role([Data Scientist, MOLCURE Inc., Tokyo, Japan], [2022 - 2023])
   #bullets(
     (
-      [Fine-tuned ESM-based Transformer models for sequence classification tasks],
+      [Fine-tuned ESM-based transformer models for sequence classification tasks],
     ),
     gap: 0.1pt,
   )
@@ -215,9 +216,9 @@
 ]
 
 #let education = [
-  #role([Western University, Canada, Graduate Studies in Bioinformatics], [2023 - 2024])
+  #role([Western University, Canada, Machine Learning in Biomedicine], [2023 - 2024])
   #v(1pt)
-  #role([Osaka University, Japan, PhD Coursework in Bioinformatics], [2017 - 2022])
+  #role([Osaka University, Japan, Bioinformatics], [2017 - 2022])
   #v(1pt)
   #role([Zonguldak Bulent Ecevit University, Turkey, Doctor of Medicine], [2008 - 2014])
 ]
@@ -226,7 +227,7 @@
   #v(10pt)
   #main-section([PROFILE], [
     #set par(leading: 0.5em)
-    Software engineer with strong backend depth in data platforms, cloud infrastructure, and AI-enabled applications. Experienced in building user-facing products, scalable APIs, orchestration workflows, and cloud-native systems on AWS and Kubernetes. Proven track record of delivering internal platforms, improving performance by orders of magnitude, and supporting high-throughput data and machine learning workloads end to end.
+    Software engineer specializing in data platforms, backend systems, and ML infrastructure, with a background spanning medicine, bioinformatics, applied machine learning, and platform engineering. Experienced in building lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and enable user-facing data and AI products in life sciences and healthcare.
   ])
 
   #v(3pt)
