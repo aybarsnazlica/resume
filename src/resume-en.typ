@@ -226,10 +226,8 @@
 #let right-column = [
   #v(10pt)
   #main-section([PROFILE], [
-    #pad(left: 12pt)[
-      #set par(leading: 0.5em)
-      Software engineer specializing in data platforms, backend systems, and ML infrastructure, with a background spanning medicine, bioinformatics, applied machine learning, and platform engineering. Experienced in building lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and enable user-facing data and AI products in life sciences and healthcare.
-    ]
+    #set par(leading: 0.5em)
+    Software engineer specializing in data platforms, backend systems, and ML infrastructure, with a background spanning medicine, bioinformatics, applied machine learning, and platform engineering. Experienced in building lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and enable user-facing data and AI products in life sciences and healthcare.
   ])
 
   #v(3pt)
