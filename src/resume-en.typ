@@ -133,7 +133,7 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "TypeScript", "SQL")),
+      ("Programming Languages:", ("Python", "TypeScript")),
       ("Frontend:", ("React",)),
       (
         "Backend:",
@@ -141,7 +141,7 @@
           "FastAPI",
         ),
       ),
-      ("Databases:", ("PostgreSQL",)),
+      ("Databases:", ("PostgreSQL", "SQL")),
       (
         "Cloud & Infrastructure:",
         (
