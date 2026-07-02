@@ -126,14 +126,14 @@
     #underline([#text("github.com/aybarsnazlica")])
   ]
 
-  #v(15pt)
+  #v(5pt)
   #sidebar-rule
-  #v(15pt)
+  #v(5pt)
 
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "TypeScript")),
+      ("Programming Languages:", ("Python", "Go", "TypeScript")),
       ("Frontend:", ("React",)),
       (
         "Backend:",
@@ -156,13 +156,13 @@
         "Data Platform:",
         ("Apache Iceberg", "Apache Spark", "Trino"),
       ),
-      ("CI/CD:", ("GitHub Actions",)),
+      ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
   )
 
-  #v(15pt)
+  #v(5pt)
   #sidebar-rule
-  #v(15pt)
+  #v(5pt)
 
   #heading([LANGUAGES], gap: 1pt)
   #set text(size: 9pt, fill: muted)
@@ -184,7 +184,7 @@
     (
       [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
       [Architected a production-grade data lakehouse (Amazon S3, Apache Iceberg, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
-      [Built data ingestion services that discovered datasets in Amazon S3, launched ephemeral Apache Spark SQL jobs on Kubernetes, and landed normalized Apache Iceberg tables for downstream analytics],
+      [Built data ingestion services in Go that discovered datasets in Amazon S3 and launched ephemeral Apache Spark SQL jobs on Kubernetes to generate normalized Apache Iceberg tables for downstream analytics],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
       [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
       [Built frontend (React) and backend (FastAPI) services for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
