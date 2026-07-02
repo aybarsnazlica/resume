@@ -133,15 +133,7 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Python", "Go", "TypeScript")),
-      ("Frontend:", ("React",)),
-      (
-        "Backend:",
-        (
-          "FastAPI",
-        ),
-      ),
-      ("Databases:", ("PostgreSQL", "SQL")),
+      ("Programming Languages:", ("Python", "Go", "TypeScript", "SQL")),
       (
         "Cloud & Infrastructure:",
         (
@@ -153,8 +145,14 @@
         ),
       ),
       (
-        "Data Platform:",
-        ("Apache Iceberg", "Apache Spark", "Trino"),
+        "Platform and Data Systems:",
+        ("Apache Iceberg", "Apache Spark", "Trino", "PostgreSQL"),
+      ),
+      (
+        "Service Development:",
+        (
+          "FastAPI",
+        ),
       ),
       ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
@@ -227,7 +225,7 @@
   #v(10pt)
   #main-section([PROFILE], [
     #set par(leading: 0.5em)
-    Software engineer specializing in data platforms, backend systems, and ML infrastructure, with a background spanning medicine, bioinformatics, applied machine learning, and platform engineering. Experienced in building lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and enable user-facing data and AI products in life sciences and healthcare.
+    Software engineer with experience building data platforms, backend services, and ML infrastructure. Experienced in designing lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and power data and AI products.
   ])
 
   #v(3pt)
