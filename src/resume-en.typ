@@ -107,7 +107,7 @@
 ]
 
 #let left-column = [
-  #v(10pt)
+  #v(15pt)
   #set text(size: 9pt, fill: muted)
   Sapporo, Hokkaido, Japan
   #v(5pt)
@@ -133,9 +133,9 @@
   #sidebar-group(
     [SKILLS],
     (
-      ("Programming Languages:", ("Go", "Python", "TypeScript", "SQL")),
+      ("Programming Languages:", ("Go", "Python", "SQL")),
       (
-        "Cloud & Infrastructure:",
+        "Cloud and Infrastructure:",
         (
           "AWS (EC2, S3)",
           "Kubernetes",
@@ -146,8 +146,23 @@
         ),
       ),
       (
+        "Backend Architecture:",
+        (
+          "REST API Design",
+          "Microservices",
+          "Data Modeling",
+          "Caching",
+          "Authentication and Authorization",
+        ),
+      ),
+      (
         "Distributed Data Systems:",
-        ("Apache Iceberg", "Apache Spark", "Trino", "PostgreSQL"),
+        (
+          "Apache Iceberg",
+          "Apache Spark",
+          "Trino",
+          "PostgreSQL",
+        ),
       ),
       ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
@@ -184,7 +199,7 @@
       [Designed authentication and access controls for secure platform services],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
       [Implemented MLOps workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
-      [Designed and built Go backend services, REST APIs, and supporting React interfaces for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
+      [Designed and built Go backend services, REST APIs, and supporting React (TypeScript) interfaces for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
       [Developed a next-generation sequencing data processing pipeline with Python and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
     ),
     gap: 0.1pt,
