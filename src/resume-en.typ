@@ -196,7 +196,7 @@
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
       [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
       [Implemented Redis-based caching to reduce API latency and improve platform performance],
-      [Designed authentication and access controls for secure platform services],
+      [Designed and implemented OAuth2 password-flow authentication with bcrypt-hashed passwords and JWT bearer tokens for secure Go backend services],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
       [Implemented MLOps workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
       [Designed and built Go backend services, REST APIs, and supporting React (TypeScript) interfaces for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
@@ -216,12 +216,12 @@
 
   #v(1.5pt)
   #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
-  #bullets(
-    (
-      [Provided patient care in emergency and family medicine departments],
-    ),
-    gap: 0.1pt,
-  )
+  // #bullets(
+  //   (
+  //     [Provided patient care in emergency and family medicine departments],
+  //   ),
+  //   // gap: 0.1pt,
+  // )
 ]
 
 #let education = [
