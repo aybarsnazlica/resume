@@ -191,10 +191,9 @@
   #bullets(
     (
       [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
-      [Architected a production-grade data lakehouse (Amazon S3, Apache Iceberg, Kubernetes) processing hundreds of millions of records for analytics and ML workloads],
+      [Redesigned the data platform from a PostgreSQL-based system to a scalable lakehouse architecture on Amazon S3 using Apache Iceberg, Spark, and Trino, better aligning infrastructure with data growth and analytical and ML workloads],
       [Designed and implemented scalable Go microservices for data ingestion and processing, with unit and integration tests, that discovered datasets in Amazon S3 and launched ephemeral Apache Spark SQL jobs on Kubernetes to generate normalized Apache Iceberg tables for downstream analytics],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
-      [Reduced lakehouse query latency by 10x through partitioning strategies, storage layout, and query optimization],
       [Implemented Redis-based caching to reduce API latency and improve platform performance],
       [Designed and implemented OAuth2 password-flow authentication issuing JWT access tokens for secure Go backend services],
       [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
@@ -216,12 +215,12 @@
 
   #v(1.5pt)
   #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
-  // #bullets(
-  //   (
-  //     [Provided patient care in emergency and family medicine departments],
-  //   ),
-  //   // gap: 0.1pt,
-  // )
+  #bullets(
+    (
+      [Provided patient care in emergency and family medicine departments],
+    ),
+    gap: 0.1pt,
+  )
 ]
 
 #let education = [
