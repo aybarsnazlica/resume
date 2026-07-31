@@ -137,7 +137,7 @@
       (
         "Cloud and Infrastructure:",
         (
-          "AWS (EC2, S3)",
+          "AWS (IAM, EC2, S3)",
           "Kubernetes",
           "Docker",
           "Terraform",
@@ -190,14 +190,13 @@
   #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
   #bullets(
     (
-      [Built a unified data and machine learning platform spanning lakehouse infrastructure, dataset and metadata management, experiment tracking, and GPU inference],
-      [Redesigned the data platform from a PostgreSQL-based system to a scalable lakehouse architecture on Amazon S3 using Apache Iceberg, Spark, and Trino, better aligning infrastructure with data growth and analytical and ML workloads],
+      [Built a unified data and machine learning platform by redesigning a PostgreSQL-based system into a scalable lakehouse architecture on Amazon S3 using Apache Iceberg, Spark, and Trino, spanning dataset and metadata management, experiment tracking, and GPU inference while reducing infrastructure overhead and better aligning the platform with data growth],
       [Designed and implemented scalable Go microservices for data ingestion and processing, with unit and integration tests, that discovered datasets in Amazon S3 and launched ephemeral Apache Spark SQL jobs on Kubernetes to generate normalized Apache Iceberg tables for downstream analytics],
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
       [Implemented Redis-based caching to reduce API latency and improve platform performance],
       [Designed and implemented OAuth2 password-flow authentication issuing JWT access tokens for secure Go backend services],
-      [Automated cloud infrastructure across AWS, Docker, and Kubernetes, improving reliability and cost efficiency for data and ML services],
-      [Implemented MLOps workflows to launch GPU inference instances on AWS, run containerized model jobs, and stream outputs, logs, and artifacts back into the platform],
+      [Developed Terraform-based AWS infrastructure for reproducible GPU workloads, covering EC2 provisioning, IAM access, security groups, SSH key management, and Docker bootstrap automation],
+      [Built platform workflows to provision GPU inference workloads on AWS, orchestrate containerized model jobs, and stream logs, outputs, and artifacts back into the platform],
       [Designed and built Go backend services, REST APIs, and supporting React (TypeScript) interfaces for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
       [Developed a next-generation sequencing data processing pipeline with Python and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
     ),
