@@ -82,15 +82,15 @@
 }
 
 #let sidebar-group(title, items) = [
-  #heading(title, gap: 1pt)
+  #heading(title, gap: 5pt)
   #set text(size: 9pt, fill: muted)
   #for (label, values) in items [
     #label
-    #v(1.5pt)
+    #v(5pt)
     #sidebar-list(values)
-    #v(1pt)
+    #v(10pt)
   ]
-  #v(3pt)
+  #v(10pt)
 ]
 
 #let header = [
@@ -98,8 +98,8 @@
     #set text(size: 24pt, weight: "bold", fill: accent)
     AYBARS NAZLICA
   ]
-  #v(-10pt)
   #line(length: 100%, stroke: 3pt + rule)
+  #v(10pt)
 ]
 
 #let sidebar-rule = [
@@ -107,26 +107,27 @@
 ]
 
 #let left-column = [
-  #v(15pt)
+  #v(10pt)
   #set text(size: 9pt, fill: muted)
   Sapporo, Hokkaido, Japan
-  #v(5pt)
+  #v(10pt)
 
   #link("mailto:aybarsnazlica@gmail.com")[
     #underline([#text("aybarsnazlica@gmail.com")])
   ]
-  #v(5pt)
+  #v(10pt)
 
   #link("https://aybarsnazlica.github.io")[
     #underline([#text("aybarsnazlica.github.io")])
   ]
-  #v(5pt)
+  #v(10pt)
 
   #link("https://github.com/aybarsnazlica")[
     #underline([#text("github.com/aybarsnazlica")])
   ]
 
-  #v(5pt)
+
+  #v(10pt)
   #sidebar-rule
   #v(5pt)
 
@@ -166,18 +167,6 @@
       ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ),
   )
-
-  #v(5pt)
-  #sidebar-rule
-  #v(5pt)
-
-  #heading([LANGUAGES], gap: 1pt)
-  #set text(size: 9pt, fill: muted)
-  #sidebar-list((
-    "English (CEFR C1)",
-    "Japanese (Business level, JLPT N2)",
-    "Turkish (Native)",
-  ))
 ]
 
 #let main-section(title, body) = [
@@ -213,12 +202,6 @@
 
   #v(1.5pt)
   #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
-  #bullets(
-    (
-      [Provided patient care in emergency and family medicine departments],
-    ),
-    gap: 0.1pt,
-  )
 ]
 
 #let education = [
