@@ -174,6 +174,24 @@
   #block(width: 100%)[#body]
 ]
 
+#let education-row(institution, degree) = [
+  #grid(
+    columns: (1fr, auto),
+    column-gutter: 10pt,
+    align: (left, right),
+    [
+      #set par(justify: false)
+      #set text(weight: "semibold")
+      #institution
+    ],
+    [
+      #set par(justify: false)
+      #set text(weight: "semibold")
+      #degree
+    ],
+  )
+]
+
 #let experience = [
   #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
   #bullets(
@@ -205,11 +223,11 @@
 ]
 
 #let education = [
-  #role([Western University, Canada, Machine Learning in Biomedicine], [2023 - 2024])
+  #education-row([Western University, Canada], [Graduate studies in Computational Biology])
   #v(1pt)
-  #role([Osaka University, Japan, Bioinformatics], [2017 - 2022])
+  #education-row([Osaka University, Japan], [Graduate studies in Bioinformatics])
   #v(1pt)
-  #role([Zonguldak Bulent Ecevit University, Turkey, Doctor of Medicine], [2008 - 2014])
+  #education-row([Zonguldak Bulent Ecevit University, Turkey], [Doctor of Medicine])
 ]
 
 #let right-column = [
