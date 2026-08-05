@@ -175,25 +175,13 @@
 ]
 
 #let education-row(institution, degree) = [
-  #grid(
-    columns: (1fr, auto),
-    column-gutter: 10pt,
-    align: (left, right),
-    [
-      #set par(justify: false)
-      #set text(weight: "semibold")
-      #institution
-    ],
-    [
-      #set par(justify: false)
-      #set text(weight: "semibold")
-      #degree
-    ],
-  )
+  #set par(justify: false)
+  #set text(weight: "semibold")
+  #institution – #degree
 ]
 
 #let experience = [
-  #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023 - Present])
+  #role([Software Engineer, MOLCURE Inc., Tokyo, Japan (Remote)], [2023–Present])
   #bullets(
     (
       [Built a unified data and machine learning platform by redesigning a PostgreSQL-based system into a scalable lakehouse architecture on Amazon S3 using Apache Iceberg, Spark, and Trino, spanning dataset and metadata management, experiment tracking, and GPU inference while reducing infrastructure overhead and better aligning the platform with data growth],
@@ -210,7 +198,7 @@
   )
 
   #v(1.5pt)
-  #role([Data Scientist, MOLCURE Inc., Tokyo, Japan], [2022 - 2023])
+  #role([Data Scientist, MOLCURE Inc., Tokyo, Japan], [2022–2023])
   #bullets(
     (
       [Fine-tuned ESM-based transformer models for sequence classification tasks],
@@ -219,7 +207,7 @@
   )
 
   #v(1.5pt)
-  #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015 - 2017])
+  #role([Medical Doctor, Gallipoli Hospital and COMU Hospital, Turkey], [2015–2017])
 ]
 
 #let education = [
