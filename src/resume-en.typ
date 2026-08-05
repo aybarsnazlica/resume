@@ -189,7 +189,7 @@
       [Designed scalable data models and lookup tables for identity tracking, deduplication, and versioning across analytics and ML workflows],
       [Implemented Redis-based caching to reduce API latency and improve platform performance],
       [Designed and implemented OAuth2 password-flow authentication issuing JWT access tokens for secure Go backend services],
-      [Developed Terraform-based AWS infrastructure for reproducible GPU workloads, automating EC2 provisioning, IAM access, and network security],
+      [Developed Terraform-based AWS infrastructure for reproducible GPU workloads, automating EC2 instance provisioning, access control, network security, and instance lifecycle management],
       [Built platform workflows to provision GPU inference workloads on AWS, orchestrate containerized model jobs, and stream logs, outputs, and artifacts back into the platform],
       [Designed and built Go backend services, REST APIs, and supporting React (TypeScript) interfaces for dataset discovery, metadata management, model artifact browsing, experiment metric visualization, and GPU inference orchestration with live log streaming],
       [Developed a next-generation sequencing data processing pipeline with Python and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
