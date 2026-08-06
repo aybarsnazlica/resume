@@ -1,7 +1,7 @@
 #set page(
   paper: "a4",
   fill: white,
-  margin: (top: 15mm, right: 15mm, bottom: 10mm, left: 15mm),
+  margin: (top: 10mm, right: 15mm, bottom: 10mm, left: 15mm),
 )
 
 #set text(
@@ -14,7 +14,6 @@
 
 #set par(
   justify: true,
-  leading: 0.42em,
 )
 
 #let accent = rgb("#92205d")
@@ -30,7 +29,6 @@
 #let role(title, dates) = [
   #grid(
     columns: (1fr, auto),
-    column-gutter: 10pt,
     align: (left, right),
     [
       #set par(justify: false)
@@ -49,11 +47,10 @@
 #let bullets(items, gap: 1pt) = {
   for item in items [
     #grid(
-      columns: (7pt, 1fr),
-      column-gutter: 5pt,
+      columns: (10pt, 1fr),
       align: (left, horizon),
       [
-        #set text(size: 7pt)
+        #set text(size: 10pt)
         #sym.bullet
       ],
       [#item],
@@ -66,7 +63,6 @@
   for item in items [
     #grid(
       columns: (10pt, 1fr),
-      column-gutter: 4pt,
       align: (left, horizon),
       [
         #set text(size: 9pt)
@@ -77,7 +73,7 @@
         #item
       ],
     )
-    #v(0.25pt)
+    #v(3pt)
   ]
 }
 
@@ -98,6 +94,7 @@
     #set text(size: 24pt, weight: "bold", fill: accent)
     AYBARS NAZLICA
   ]
+  #v(-5pt)
   #line(length: 100%, stroke: 3pt + rule)
   #v(10pt)
 ]
@@ -174,10 +171,22 @@
   #block(width: 100%)[#body]
 ]
 
-#let education-row(institution, degree) = [
-  #set par(justify: false)
-  #set text(weight: "semibold")
-  #institution – #degree
+#let education-row(institution, degree, dates) = [
+  #grid(
+    columns: (1fr, auto),
+    column-gutter: 10pt,
+    align: (left, right),
+    [
+      #set par(justify: false)
+      #set text(weight: "semibold")
+      #institution, #degree
+    ],
+    [
+      #set par(justify: false)
+      #set text(weight: "semibold")
+      #dates
+    ],
+  )
 ]
 
 #let experience = [
@@ -211,17 +220,14 @@
 ]
 
 #let education = [
-  #education-row([Western University, Canada], [Graduate studies in Computational Biology])
+  #education-row([Osaka University, Japan], [Graduate studies in Bioinformatics], [2017–2022])
   #v(1pt)
-  #education-row([Osaka University, Japan], [Graduate studies in Bioinformatics])
-  #v(1pt)
-  #education-row([Zonguldak Bulent Ecevit University, Turkey], [Doctor of Medicine])
+  #education-row([Zonguldak Bulent Ecevit University, Turkey], [Doctor of Medicine], [2008–2014])
 ]
 
 #let right-column = [
   #v(10pt)
   #main-section([PROFILE], [
-    #set par(leading: 0.5em)
     Software engineer with experience building data platforms, backend services, and ML infrastructure. Experienced in designing lakehouse architectures, scalable data services, orchestration workflows, and cloud-native applications on AWS and Kubernetes. Proven track record of delivering internal platforms that improve performance, support high-throughput analytics and machine learning workloads, and power data and AI products.
   ])
 
