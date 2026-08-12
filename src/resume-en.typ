@@ -84,9 +84,8 @@
     #label
     #v(5pt)
     #sidebar-list(values)
-    #v(10pt)
+    #v(5pt)
   ]
-  #v(10pt)
 ]
 
 #let header = [
@@ -135,12 +134,11 @@
       (
         "Cloud and Infrastructure:",
         (
-          "AWS (IAM, EC2, S3)",
+          "AWS (EC2, S3, IAM, VPC)",
           "Kubernetes",
           "Docker",
           "Terraform",
           "Linux",
-          "Bash",
         ),
       ),
       (
@@ -153,12 +151,13 @@
         ),
       ),
       (
-        "Distributed Data Systems:",
+        "Databases and Distributed Data Systems:",
         (
+          "PostgreSQL",
+          "Redis",
           "Apache Iceberg",
           "Apache Spark",
           "Trino",
-          "PostgreSQL",
         ),
       ),
       ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
