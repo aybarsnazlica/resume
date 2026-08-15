@@ -1,7 +1,7 @@
 #set page(
   paper: "a4",
   fill: white,
-  margin: (top: 10mm, right: 15mm, bottom: 10mm, left: 15mm),
+  margin: (top: 15mm, right: 15mm, bottom: 15mm, left: 15mm),
 )
 
 #set text(
