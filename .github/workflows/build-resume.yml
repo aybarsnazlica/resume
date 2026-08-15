@@ -3,11 +3,11 @@ name: Build Resume
 on:
   push:
     paths:
-      - "src/resume-en.typ"
+      - "src/resume.typ"
       - ".github/workflows/build-resume.yml"
   pull_request:
     paths:
-      - "src/resume-en.typ"
+      - "src/resume.typ"
       - ".github/workflows/build-resume.yml"
   workflow_dispatch:
 
@@ -23,10 +23,10 @@ jobs:
           typst-version: "0.14.2"
 
       - name: Compile resume
-        run: typst compile src/resume-en.typ resume-en.pdf --font-path fonts
+        run: typst compile src/resume.typ resume.pdf --font-path fonts
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v6
         with:
-          name: resume-en
-          path: resume-en.pdf
+          name: resume
+          path: resume.pdf
