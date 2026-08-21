@@ -26,7 +26,7 @@
 #let header = [
   #set align(left)
   #text(size: 20pt, weight: "bold", fill: accent)[AYBARS NAZLICA]
-  #v(4pt)
+  #v(5pt)
   #text(size: 9pt, fill: muted)[
     Sapporo, Hokkaido, Japan \
     #v(2pt)
@@ -34,14 +34,14 @@
     #v(2pt)
     #contact-link("https://aybarsnazlica.github.io", text("aybarsnazlica.github.io")) \
   ]
-  #v(6pt)
+  #v(10pt)
   #line(length: 100%, stroke: 1.2pt + accent)
 ]
 
 #let letter = [
   #header
 
-  #v(10pt)
+  #v(20pt)
 
   #align(right)[#datetime.today().display("[year]-[month padding:zero]-[day padding:zero]")]
 
@@ -50,23 +50,23 @@
   Hiring Manager \
   #company \
 
-  #v(20pt)
+  #v(30pt)
 
   Dear Hiring Manager,
 
-  #v(10pt)
+  #v(20pt)
 
-  I am applying for the #role role at #company. I am currently a Software Engineer at MOLCURE, where I build production systems at the intersection of data infrastructure, machine learning workflows, and cloud platform engineering. My work has focused on turning demanding data and ML workloads into reliable systems that teams can use safely and at scale.
+  I am applying for the #role role at #company. I am currently a Software Engineer at MOLCURE, where I design, build, and operate internal data and AI infrastructure on AWS and Kubernetes. My work focuses on turning data-intensive analytics, machine learning, and GPU inference workloads into reliable platform services that teams can use safely and at scale.
 
-  My recent work maps closely to the platform challenges in this role. At MOLCURE, I helped redesign a PostgreSQL-based internal system into a scalable lakehouse platform on Amazon S3 using Apache Iceberg, Spark, and Trino, covering dataset discovery, metadata management, experiment tracking, and downstream analytics. I also built Go microservices that discover data in S3 and launch ephemeral Spark SQL workloads on Kubernetes, created identity and versioning data models, introduced Redis-based caching to reduce API latency, and implemented authentication and authorization using password hashing, JWT bearer tokens, and OAuth2. That combination of data engineering, backend design, and operational ownership is the core of how I work.
+  My recent work maps closely to platform engineering for data and AI systems. At MOLCURE, I owned the architecture and implementation of an internal data and AI platform, evolving a PostgreSQL-based system into a lakehouse on Amazon S3 with Apache Iceberg, Spark, and Trino. I designed and operated Go control-plane services for dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration, and built Kubernetes workflows that launch ephemeral Spark SQL jobs to generate normalized Iceberg tables for analytics and ML workloads.
 
-  I am particularly interested in #company because the role is about building the infrastructure that makes advanced AI systems dependable in high-stakes environments. The mission of bridging frontier models and autonomous agents into secure enterprise and government settings is compelling to me. I have already worked on orchestration workflows for GPU inference on AWS, containerized model execution, and systems that move artifacts, logs, and metadata back into a platform for downstream use. I would be excited to apply that experience to agent infrastructure, evaluation pipelines, and the data interfaces needed to make deployed AI systems observable, governable, and continuously improvable.
+  I also bring production engineering experience around the systems that keep platforms maintainable: Terraform-based AWS infrastructure, GitHub Actions release automation, unit and integration testing, structured logs, live job log streaming, Prometheus metrics, Grafana dashboards, Redis-backed caching, and API security with JWT bearer tokens and OAuth2-based access control. That combination of backend engineering, data infrastructure, and operational ownership is the core of how I work.
 
   I also bring an ownership-oriented approach shaped by an unusual background. Before moving fully into software and platform engineering, I trained and worked as a medical doctor and later pursued graduate studies in bioinformatics. That path has made me comfortable operating in research-heavy environments, learning quickly across disciplines, and staying rigorous when systems have real-world consequences.
 
   Thank you for your consideration. I would welcome the chance to discuss how my experience in backend systems, data platforms, and ML infrastructure could contribute to #company.
 
-  #v(20pt)
+  #v(30pt)
 
   Sincerely, \
   Aybars Nazlica
