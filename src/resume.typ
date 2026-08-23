@@ -146,7 +146,6 @@
         (
           "REST API Design",
           "Data Modeling",
-          "Caching",
           "AuthN/AuthZ",
         ),
       ),
@@ -194,12 +193,12 @@
     (
       [Owned the architecture and implementation of an internal data and AI platform, evolving a PostgreSQL-based system into a scalable lakehouse on Amazon S3 with Apache Iceberg, Spark, and Trino],
       [Designed and operated Go control-plane services and REST APIs for dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration],
-      [Built a Kubernetes-based data processing plane that launched ephemeral Apache Spark SQL jobs to transform S3 datasets into normalized Apache Iceberg tables for analytics and ML workloads],
-      [Standardized data models and lookup tables for identity tracking, deduplication, and versioning across analytics, experiment tracking, and ML workflows],
+      [Built a Kubernetes-based data processing plane that launched ephemeral Apache Spark SQL jobs to transform S3 datasets into normalized Apache Iceberg tables for analytics and machine learning workloads],
+      [Standardized data models and lookup tables for identity tracking, deduplication, and versioning across analytics, experiment tracking, and machine learning workflows],
       [Wrote unit and integration tests for Go services, platform APIs, and data workflows to validate ingestion, metadata, and orchestration behavior],
       [Automated AWS platform infrastructure with Terraform, including EC2 provisioning, IAM access control, VPC/network security, and instance lifecycle management],
       [Built CI/CD and release automation with GitHub Actions for containerized services, improving deployment repeatability and reducing manual operations],
-      [Added production observability through structured logs, live job log streaming, Prometheus metrics, and Grafana dashboards for API latency, job execution status, resource usage, and platform health],
+      [Added observability with structured logs, live job streaming, Prometheus metrics, and Grafana dashboards for APIs, jobs, resources, and platform health],
       [Secured platform APIs and internal services with password hashing, JWT bearer tokens, and OAuth2-based access control],
       [Introduced Redis-backed caching for high-traffic endpoints to reduce API latency and improve platform responsiveness],
       [Developed a next-generation sequencing data processing pipeline with Python and Docker, reducing data preparation time from days to hours and increasing throughput by 30x],
@@ -229,7 +228,7 @@
 #let right-column = [
   #v(10pt)
   #main-section([PROFILE], [
-    Platform engineer focused on data and AI infrastructure, with experience designing and operating internal platforms on AWS and Kubernetes. Technical owner of backend services, lakehouse systems, workflow orchestration, and production components for analytics, machine learning, and GPU inference workloads.
+    Platform engineer focused on data and AI infrastructure, owning backend services, lakehouse systems, and workflow orchestration on AWS and Kubernetes. Background in bioinformatics, medicine, and scientific computing.
   ])
 
   #v(3pt)
