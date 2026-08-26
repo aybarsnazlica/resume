@@ -1,6 +1,6 @@
 .PHONY: resume cover-letter shokumu-keirekisho
 
-all: resume cover-letter
+all: resume cover-letter shokumu-keirekisho
 
 resume:
 	typst compile src/resume.typ ~/Desktop/resume.pdf
