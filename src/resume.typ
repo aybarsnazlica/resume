@@ -138,7 +138,7 @@
   #sidebar-group([SKILLS], (
     ("Programming Languages:", ("Go", "Python", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
-    ("Backend & APIs:", ("REST API Design", "Data Modeling", "AuthN/AuthZ")),
+    ("Backend and APIs:", ("REST API Design", "Data Modeling", "AuthN/AuthZ")),
     ("Databases:", ("PostgreSQL", "Redis")),
     ("Distributed Data Systems:", ("Apache Iceberg", "Apache Spark", "Trino")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
