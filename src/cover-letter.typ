@@ -27,13 +27,22 @@
   #set align(left)
   #text(size: 20pt, weight: "bold", fill: accent)[AYBARS NAZLICA]
   #v(5pt)
-  #text(size: 9pt, fill: muted)[
-    Sapporo, Hokkaido, Japan \
-    #v(2pt)
-    #contact-link("mailto:aybarsnazlica@gmail.com", text("aybarsnazlica@gmail.com")) \
-    #v(2pt)
-    #contact-link("https://aybarsnazlica.github.io", text("aybarsnazlica.github.io")) \
-  ]
+  #grid(
+    columns: (1fr, auto, 1fr),
+    align: (left, center, right),
+    text(size: 9pt, fill: muted)[
+      #text(weight: "semibold")[Location:] Sapporo, Hokkaido, Japan
+    ],
+    text(size: 9pt, fill: muted)[
+      #text(weight: "semibold")[Email:] #contact-link("mailto:aybarsnazlica@gmail.com", text("aybarsnazlica@gmail.com"))
+    ],
+    text(size: 9pt, fill: muted)[
+      #text(weight: "semibold")[Portfolio:] #contact-link(
+        "https://aybarsnazlica.github.io",
+        text("aybarsnazlica.github.io"),
+      )
+    ],
+  )
   #v(10pt)
   #line(length: 100%, stroke: 1.2pt + accent)
 ]
@@ -56,13 +65,13 @@
 
   #v(20pt)
 
-  I am applying for the #role role at #company. I am currently a Software Engineer at MOLCURE, where I design, build, and operate internal data and AI infrastructure on AWS and Kubernetes. My work focuses on turning data-intensive analytics, machine learning, and GPU inference workloads into reliable platform services that teams can use safely and at scale.
+  I am applying for the #role role at #company. I am currently a Software Engineer at MOLCURE, specializing in backend, data, and AI infrastructure. My work focuses on Go services, Python data pipelines, Kubernetes-based processing systems, and AWS lakehouse platforms for analytics, machine learning, and GPU inference workloads.
 
-  My recent work maps closely to platform engineering for data and AI systems. At MOLCURE, I owned the architecture and implementation of an internal data and AI platform, evolving a PostgreSQL-based system into a lakehouse on Amazon S3 with Apache Iceberg, Spark, and Trino. I designed and operated Go control-plane services for dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration, and built Kubernetes workflows that launch ephemeral Spark SQL jobs to generate normalized Iceberg tables for analytics and ML workloads.
+  My recent work maps closely to platform engineering for data and AI systems. At MOLCURE, I owned the architecture and implementation of a platform used by engineering and research teams, first building a PostgreSQL-based system and then evolving it into an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino. The platform processes 10+ TB of data and 5+ billion records, with Go control-plane services for dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration.
 
-  I also bring production engineering experience around the systems that keep platforms maintainable: Terraform-based AWS infrastructure, GitHub Actions release automation, unit and integration testing, structured logs, live job log streaming, Prometheus metrics, Grafana dashboards, Redis-backed caching, and API security with JWT bearer tokens and OAuth2-based access control. That combination of backend engineering, data infrastructure, and operational ownership is the core of how I work.
+  I also built the data processing and production engineering foundations around that platform: Kubernetes workflows that run ephemeral Spark SQL jobs, an upstream next-generation sequencing pipeline in Python and Docker that increased throughput by 30x, Terraform-based AWS infrastructure, GitHub Actions CI/CD, structured logging, live job streaming, Prometheus metrics, Grafana dashboards, Redis-backed caching, and API security with JWT and OAuth2-based access control.
 
-  I also bring an ownership-oriented approach shaped by an unusual background. Before moving fully into software and platform engineering, I trained and worked as a medical doctor and later pursued graduate studies in bioinformatics. That path has made me comfortable operating in research-heavy environments, learning quickly across disciplines, and staying rigorous when systems have real-world consequences.
+  I also bring an ownership-oriented approach shaped by my background in medicine, bioinformatics, and scientific computing. Before moving fully into software and platform engineering, I trained and worked as a medical doctor and later pursued graduate studies in bioinformatics, which made me comfortable operating in research-heavy environments and staying rigorous when systems have real-world consequences.
 
   Thank you for your consideration. I would welcome the chance to discuss how my experience in backend systems, data platforms, and ML infrastructure could contribute to #company.
 
