@@ -18,8 +18,8 @@
 
 #let accent = rgb("#92205d")
 #let muted = rgb("#666666")
-#let company = "<Placeholder Company Name>"
-#let role = "<Placeholder Role Name>"
+#let company = sys.inputs.at("company", default: "<Placeholder Company Name>")
+#let role = sys.inputs.at("role", default: "<Placeholder Role Name>")
 
 #let contact-link(url, label) = link(url)[#underline([#label])]
 
