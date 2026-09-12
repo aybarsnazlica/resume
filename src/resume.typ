@@ -207,7 +207,7 @@
 #let right-column = [
   #v(10pt)
   #main-section([PROFILE], [
-    Platform engineer specializing in backend, data, and AI infrastructure. Experienced in designing Go services, Python data pipelines, Kubernetes-based processing systems, and an AWS lakehouse platform built with S3, Iceberg, Spark, and Trino. Combines software engineering experience with a background in bioinformatics, scientific computing, and medicine.
+    Platform Engineer building cloud, data, and AI infrastructure for scientific research. Experienced in designing production backend services, Kubernetes-based compute platforms, and AWS data systems processing 10+ TB and 5+ billion biological records. Brings a multidisciplinary background spanning platform engineering, bioinformatics, machine learning, and scientific computing.
   ])
 
   #v(3pt)
