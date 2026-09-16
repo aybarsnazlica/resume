@@ -117,14 +117,13 @@
   ]
   #v(3pt)
 
-  #text(weight: "semibold")[Portfolio]
+  #text(weight: "semibold")[Links]
   #v(1pt)
   #link("https://aybarsnazlica.github.io")[
     #underline([#text("aybarsnazlica.github.io")])
   ]
   #v(3pt)
 
-  #text(weight: "semibold")[GitHub]
   #v(1pt)
   #link("https://github.com/aybarsnazlica")[
     #underline([#text("github.com/aybarsnazlica")])
