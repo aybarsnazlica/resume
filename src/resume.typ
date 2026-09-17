@@ -1,7 +1,7 @@
 #set page(
   paper: "a4",
   fill: white,
-  margin: (top: 15mm, right: 15mm, bottom: 15mm, left: 15mm),
+  margin: (top: 18mm, right: 18mm, bottom: 18mm, left: 18mm),
 )
 
 #set text(
@@ -41,7 +41,7 @@
       #dates
     ],
   )
-  #v(0.5pt)
+  #v(1pt)
 ]
 
 #let bullets(items, gap: 1pt) = {
@@ -78,7 +78,7 @@
 }
 
 #let sidebar-group(title, items) = [
-  #heading(title, gap: 5pt)
+  #heading(title, gap: 1pt)
   #set text(size: 9pt, fill: muted)
   #for (label, values) in items [
     #label
@@ -95,7 +95,7 @@
   ]
   #v(-5pt)
   #line(length: 100%, stroke: 3pt + rule)
-  #v(3pt)
+  #v(5pt)
 ]
 
 #let sidebar-rule = [
@@ -138,7 +138,7 @@
     ("Programming Languages:", ("Go", "Python", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
     ("Backend and APIs:", ("REST API Design", "Data Modeling", "AuthN/AuthZ")),
-    ("Databases:", ("PostgreSQL", "Redis")),
+    ("Databases:", ("PostgreSQL",)),
     ("Distributed Data Systems:", ("Apache Iceberg", "Apache Spark", "Trino")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
   ))
@@ -171,14 +171,12 @@
   #role([Software Engineer, MOLCURE Inc., Japan (Remote)], [2023–Present])
   #bullets(
     (
-      [Owned the architecture and implementation of a data and AI platform used by engineering and research teams. Built the original PostgreSQL-based system, then evolved it into an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino, processing 10+ TB of data and 5+ billion records.],
-      [Designed and operated the platform's Go-based control plane and REST APIs for dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration.],
-      [Built a Kubernetes-based data processing plane that runs ephemeral Apache Spark SQL jobs to transform S3 datasets into normalized Apache Iceberg tables for analytics and machine learning.],
-      [Developed the upstream next-generation sequencing pipeline with Python and Docker, cutting data preparation time from days to hours, increasing throughput by 30x, and feeding processed data into the lakehouse.],
-      [Standardized data models and lookup tables for identity tracking, deduplication, and versioning across analytics, experiment tracking, and machine learning workflows.],
-      [Implemented authentication and authorization with JWT, OAuth2, and password hashing; introduced Redis caching for high-traffic APIs.],
-      [Automated AWS infrastructure with Terraform, including EC2 provisioning, IAM, VPC/network security, and instance lifecycle management; built GitHub Actions CI/CD for containerized services.],
-      [Improved platform observability and reliability with structured logging, live job streaming, Prometheus metrics, and Grafana dashboards across services and data workflows.],
+      [Owned the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams. Evolved the original PostgreSQL-based system into an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino, managing 10+ TB of data and 5+ billion biological records.],
+      [Developed the upstream next-generation sequencing pipeline with Python and Docker, reducing data preparation from days to hours, increasing throughput by 30x, and delivering standardized, analysis-ready datasets into the lakehouse.],
+      [Built a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL jobs to transform raw S3 datasets into normalized, versioned Apache Iceberg tables for downstream analytics and machine learning workloads.],
+      [Designed and operated the Go-based control plane and REST APIs connecting dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration into a unified workflow for engineers and researchers.],
+      [Established shared data models and lookup tables for identity tracking, deduplication, and versioning, making datasets and experimental results reproducible across analytics and machine learning workflows; secured platform APIs with JWT, OAuth2, and password hashing.],
+      [Owned AWS infrastructure and platform operations using Terraform and GitHub Actions, covering EC2 provisioning, IAM, VPC/network security, instance lifecycle management, and containerized deployments. Improved reliability with Redis caching, structured logging, live job streaming, Prometheus metrics, and Grafana dashboards.],
     ),
     gap: 0.1pt,
   )
@@ -188,7 +186,7 @@
   #bullets(
     (
       [Fine-tuned ESM-based protein language models using multiple sequence alignment features to predict protein solubility.],
-      [Visualized transformer-derived protein embeddings to investigate learned sequence representations.],
+      
     ),
     gap: 0.1pt,
   )
@@ -209,10 +207,10 @@
     Platform Engineer building cloud, data, and AI infrastructure for scientific research. Experienced in designing production backend services, Kubernetes-based compute platforms, and AWS data systems processing 10+ TB and 5+ billion biological records. Brings a multidisciplinary background spanning platform engineering, bioinformatics, machine learning, and scientific computing.
   ])
 
-  #v(3pt)
+  #v(10pt)
   #main-section([EXPERIENCE], [#experience])
 
-  #v(3pt)
+  #v(10pt)
   #main-section([EDUCATION], [#education])
 ]
 
