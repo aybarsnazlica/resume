@@ -139,7 +139,7 @@
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
     ("Backend and APIs:", ("REST API Design", "Data Modeling", "AuthN/AuthZ")),
     ("Databases:", ("PostgreSQL",)),
-    ("Distributed Data Systems:", ("Apache Iceberg", "Apache Spark", "Trino")),
+    ("Data and AI:", ("Apache Iceberg", "Apache Spark", "Trino", "PyTorch")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
   ))
 ]
@@ -185,7 +185,7 @@
   #role([Data Scientist, MOLCURE Inc., Tokyo, Japan], [2022–2023])
   #bullets(
     (
-      [Fine-tuned ESM-based protein language models using multiple sequence alignment features to predict protein solubility.],
+      [Built a deep learning model for binary protein solubility prediction by extracting evolutionary sequence representations with MSA Transformer and training a feed-forward neural network on learned protein embeddings.],
       
     ),
     gap: 0.1pt,
@@ -204,7 +204,7 @@
 #let right-column = [
   #v(10pt)
   #main-section([PROFILE], [
-    Platform Engineer building cloud, data, and AI infrastructure for scientific research. Experienced in designing production backend services, Kubernetes-based compute platforms, and AWS data systems processing 10+ TB and 5+ billion biological records. Brings a multidisciplinary background spanning platform engineering, bioinformatics, machine learning, and scientific computing.
+    Platform Engineer building cloud, data, and AI infrastructure for scientific research. Experienced in designing production backend services, Kubernetes-based compute platforms, and AWS data systems processing 10+ TB and 5+ billion biological records. Brings a multidisciplinary background spanning platform engineering, machine learning, and scientific computing.
   ])
 
   #v(10pt)
