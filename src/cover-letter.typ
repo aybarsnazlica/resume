@@ -65,15 +65,17 @@
 
   #v(20pt)
 
-  I am applying for the #role role at #company. As a Software Engineer at MOLCURE, I build and operate the backend, data, and cloud infrastructure behind an internal data and AI platform. My work spans Go services, Python data pipelines, Kubernetes-based processing, and AWS systems supporting analytics, machine learning, and GPU inference.
+  I am applying for the #role role at #company. As a Software Engineer at MOLCURE, I build scalable infrastructure and developer platforms for machine learning and scientific workloads. My work spans Kubernetes workload orchestration, Go control planes, GPU inference, distributed data systems, and AWS infrastructure.
 
-  I owned the architecture and development of this platform, which is used by 10 engineers and researchers across two teams. After building the original PostgreSQL-based system, I evolved it into an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino that manages 10+ TB of data and 5+ billion biological records. I also established shared models for identity, deduplication, and versioning so datasets and experimental results remain reproducible across analytics and machine learning workflows.
+  I own the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams. The platform unifies dataset discovery, experiment tracking, model artifacts, and compute orchestration, giving researchers a reproducible workflow from data preparation through model inference.
 
-  The platform connects the full data lifecycle. I developed an upstream next-generation sequencing pipeline in Python and Docker that reduced data preparation from days to hours and increased throughput by 30x. Kubernetes then launches ephemeral Spark SQL jobs to convert raw S3 data into normalized, versioned Iceberg tables, while a Go-based control plane and REST APIs provide dataset discovery, metadata management, experiment tracking, model artifact browsing, and GPU inference orchestration.
+  I built a Kubernetes-based data processing plane that launches ephemeral Spark SQL workloads and a Go control plane with REST APIs for platform orchestration. I also built GPU inference orchestration that lets researchers discover model artifacts and launch and manage inference workloads. More recently, I developed AI agent skills that standardize reproducible custom model inference across containerized execution, model checkpoints, runtime parameters, and structured outputs.
 
-  Beyond application development, I own the platform's AWS infrastructure and cloud operations. I use Terraform and GitHub Actions to manage provisioning, networking, IAM, instance lifecycles, and containerized deployments, and I support production reliability through API security, structured logging, live job streaming, Prometheus metrics, and Grafana dashboards. My earlier work in medicine, bioinformatics, and machine learning helps me translate scientific needs into dependable engineering systems.
+  Underpinning these workloads, I built an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino that manages 10+ TB of data and 5+ billion biological records as a versioned foundation for ML and analytics. I also built a data processing pipeline that reduced preparation time from days to hours and increased throughput by 30x. I own the platform's AWS operations using Terraform and GitHub Actions and support production reliability with Prometheus and Grafana.
 
-  Thank you for your consideration. I would welcome the chance to discuss how my experience in backend systems, data platforms, and ML infrastructure could contribute to #company.
+  My background in platform engineering, machine learning, bioinformatics, and medicine helps me translate researcher needs into dependable systems. I would bring to #company hands-on experience building both the infrastructure beneath AI workloads and the platform interfaces that make those workloads accessible and reproducible.
+
+  Thank you for your consideration. I would welcome the chance to discuss how my experience building AI and data platforms could contribute to #company.
 
   #v(30pt)
 
