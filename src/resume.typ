@@ -137,9 +137,9 @@
   #sidebar-group([SKILLS AND TOOLS], (
     ("Programming Languages:", ("Go", "Python", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
-    ("Machine Learning:", ("PyTorch",)),
-    ("Databases:", ("PostgreSQL",)),
-    ("Distributed Data Systems:", ("Apache Iceberg", "Apache Spark", "Trino")),
+    ("Machine Learning and AI:", ("PyTorch", "LangGraph",)),
+    ("Databases:", ("PostgreSQL", "DuckDB")),
+    ("Data Platforms:", ("Apache Iceberg", "Apache Spark", "Trino", "dbt")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
   ))
 ]
@@ -176,7 +176,7 @@
       [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration.],
       [Built GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads.],
       [Built an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
-      [Built AI agent skills for reproducible custom model inference through a standardized interface, orchestrating containerized execution, model checkpoints, runtime parameters, and structured outputs.],
+      [Built AI agents that enabled researchers to query internal scientific data in natural language and run reproducible sequence optimization workflows through a self-service interface.],
       [Owned AWS infrastructure and platform operations with Terraform and GitHub Actions, covering EC2, IAM, VPC networking, instance lifecycle, and containerized deployments; implemented observability with Prometheus and Grafana.],
       [Built a data processing pipeline that reduced data preparation from days to hours and increased throughput by 30x, producing standardized datasets for downstream ML workflows.],
     ),
