@@ -137,9 +137,9 @@
   #sidebar-group([SKILLS AND TOOLS], (
     ("Programming Languages:", ("Go", "Python", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
-    ("Machine Learning and AI:", ("PyTorch", "LangGraph",)),
-    ("Databases:", ("PostgreSQL", "DuckDB")),
-    ("Data Platforms:", ("Apache Iceberg", "Apache Spark", "Trino", "dbt")),
+    ("Machine Learning and AI:", ("PyTorch", "LangGraph")),
+    ("Databases:", ("PostgreSQL", "Redis", "DuckDB")),
+    ("Data Platforms:", ("Apache Iceberg", "Apache Spark", "Trino")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
   ))
 ]

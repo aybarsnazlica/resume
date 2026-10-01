@@ -133,8 +133,8 @@
   [Go、Python、SQL],
   [AWS（EC2、S3、IAM、VPC）、Kubernetes、Docker、Terraform、Linux],
   [PyTorch、LangGraph],
-  [Apache Iceberg、Apache Spark、Trino、dbt],
-  [PostgreSQL、DuckDB],
+  [Apache Iceberg、Apache Spark、Trino],
+  [PostgreSQL、Redis、DuckDB],
   [GitHub Actions、Prometheus、Grafana],
 ))
 
