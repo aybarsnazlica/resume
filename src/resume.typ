@@ -135,7 +135,7 @@
   #v(5pt)
 
   #sidebar-group([SKILLS AND TOOLS], (
-    ("Programming Languages:", ("Go", "Python", "TypeScript", "SQL")),
+    ("Programming Languages:", ("Python", "Go", "TypeScript", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
     ("Machine Learning and AI:", ("PyTorch", "LangGraph")),
     ("Databases:", ("PostgreSQL", "Redis")),
