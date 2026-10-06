@@ -172,11 +172,11 @@
   #bullets(
     (
       [Owned the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams, unifying dataset discovery, experiment tracking, model artifacts, and compute orchestration across the ML lifecycle.],
-      [Built a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables for analytics and machine learning.],
+      [Engineered a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables for analytics and machine learning.],
       [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration and built the platform's user interface with TypeScript and React.],
-      [Built GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads.],
-      [Built an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
-      [Built AI agents that enabled researchers to query internal scientific data in natural language and run reproducible sequence optimization workflows through a self-service interface.],
+      [Implemented GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads.],
+      [Established an Amazon S3 lakehouse with Apache Iceberg, Spark, and Trino, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
+      [Developed AI agents that enabled researchers to query internal scientific data in natural language and run reproducible sequence optimization workflows through a self-service interface.],
       [Owned AWS infrastructure and platform operations with Terraform and GitHub Actions, covering EC2, IAM, VPC networking, instance lifecycle, and containerized deployments; implemented observability with Prometheus and Grafana.],
       [Built a data processing pipeline that reduced data preparation from days to hours and increased throughput by 30x, producing standardized datasets for downstream ML workflows.],
     ),
