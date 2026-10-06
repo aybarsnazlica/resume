@@ -208,10 +208,10 @@
     Platform Engineer building scalable infrastructure and developer platforms for machine learning and scientific workloads. Experienced in Kubernetes, distributed systems, GPU inference, and AWS. Built and operated data and compute platforms supporting reproducible ML workflows across 10+ TB of data and 5+ billion biological records.
   ])
 
-  #v(10pt)
+  #v(5pt)
   #main-section([EXPERIENCE], [#experience])
 
-  #v(10pt)
+  #v(5pt)
   #main-section([EDUCATION], [#education])
 ]
 
