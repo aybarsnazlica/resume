@@ -130,10 +130,10 @@
 
 #section[活かせる経験・知識・技術]
 #bullets((
-  [Go、Python、TypeScript、SQL],
-  [AWS（EC2、S3、IAM、VPC）、Kubernetes、Docker、Terraform、Linux],
+  [Python、Go、TypeScript、SQL],
+  [AWS（EC2、S3、IAM、VPC）、Kubernetes、Docker、Terraform、Linux、Bash],
   [PyTorch、LangGraph],
-  [Apache Iceberg、Apache Spark、Trino],
+  [Apache Iceberg、Apache Spark],
   [PostgreSQL、Redis],
   [GitHub Actions、Prometheus、Grafana],
 ))
@@ -144,10 +144,11 @@
 #project(
   period([2024年6月]),
   (
-    [2チーム約10名の研究者・エンジニアが利用する社内データ・AIプラットフォームの設計・開発を主導。当初のPostgreSQLベースのシステムを構築した後、Amazon S3、Apache Iceberg、Spark、Trinoによるレイクハウスへ発展させ、10 TB超のデータと50億件超の生物学的レコードを管理する基盤を整備した。],
+    [2チーム約10名の研究者・エンジニアが利用する社内データ・AIプラットフォームの設計・開発を主導。当初のPostgreSQLベースのシステムを構築した後、Amazon S3、Apache Iceberg、Sparkによるレイクハウスへ発展させ、10 TB超のデータと50億件超の生物学的レコードを管理する基盤を整備した。],
   ),
   (
     [データセット探索、メタデータ管理、実験追跡、モデル成果物閲覧、GPU推論を一つのワークフローにつなぐ、GoベースのコントロールプレーンとREST APIの設計・運用、およびTypeScript/ReactによるプラットフォームUIの開発],
+    [プラットフォームへのGPU推論オーケストレーションの実装、および研究者がモデル成果物を探索し、推論ワークロードを起動・管理するためのAPIの提供],
     [Kubernetes上で一時的なApache Spark SQLジョブを起動し、S3上の生データを正規化・バージョン管理されたApache Icebergテーブルへ変換するデータ処理プレーンの構築],
     [分析・機械学習ワークフローにおけるID追跡、重複排除、バージョン管理のためのデータモデルおよびルックアップテーブルの標準化],
     [JWT、OAuth2、パスワードハッシュによる認証・認可と、高トラフィックAPI向けRedisキャッシュの実装],
@@ -160,10 +161,10 @@
   ),
   [
     #env-group([言語], ("Go", "TypeScript", "SQL", "Bash"))
-    #env-group([フロントエンド], ("React",))
+    #env-group([フロントエンド], ("React", "Metabase"))
     #env-group([OS], ("Linux",))
-    #env-group([サービス], ("Redis",)),
-    #env-group([データ基盤], ("Apache Spark", "Apache Iceberg", "Trino", "PostgreSQL"))
+    #env-group([サービス], ("Redis",))
+    #env-group([データ基盤], ("Apache Spark", "Apache Iceberg", "PostgreSQL"))
     #env-group([インフラ], ("AWS", "Docker", "Kubernetes"))
     #env-group([CI/CD], ("GitHub Actions",))
     #env-group([メトリクス収集], ("Prometheus", "Grafana"))
@@ -273,7 +274,7 @@
 
 #pagebreak()
 #section[自己PR]
-研究開発組織で継続的に使われる基盤には、機能を実装するだけでなく、データ量の増加、実験の再現性、運用のしやすさを見据えた設計が必要だと考えています。MOLCUREでは、2チーム約10名の研究者・エンジニアが利用する社内データ・AIプラットフォームの設計と開発を主導しました。当初のPostgreSQLベースのシステムから、Amazon S3、Apache Iceberg、Spark、Trinoによるレイクハウスへ段階的に発展させ、10 TB超のデータと50億件超の生物学的レコードを管理できる基盤を構築しました。
+研究開発組織で継続的に使われる基盤には、機能を実装するだけでなく、データ量の増加、実験の再現性、運用のしやすさを見据えた設計が必要だと考えています。MOLCUREでは、2チーム約10名の研究者・エンジニアが利用する社内データ・AIプラットフォームの設計と開発を主導しました。当初のPostgreSQLベースのシステムから、Amazon S3、Apache Iceberg、Sparkによるレイクハウスへ段階的に発展させ、10 TB超のデータと50億件超の生物学的レコードを管理できる基盤を構築しました。
 
 プラットフォーム開発では、GoによるコントロールプレーンとREST APIを設計・運用し、データ探索、メタデータ管理、実験追跡、モデル成果物閲覧、GPU推論オーケストレーションを一つのワークフローに統合しました。また、プラットフォームUIをTypeScript/Reactで開発しました。加えて、Kubernetes上で一時的なSpark SQLジョブを実行するデータ処理プレーンを構築し、S3上の生データを正規化・バージョン管理されたIcebergテーブルへ変換する処理を自動化しました。さらに、研究者が自然言語で社内の科学データを検索し、再現可能な配列最適化ワークフローをセルフサービスで実行できるAIエージェントを開発しました。共通のデータモデルとルックアップテーブルを整備することで、分析・機械学習ワークフロー間でデータセットと実験結果を再現可能な形で利用できるようにしました。
 
