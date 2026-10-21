@@ -135,12 +135,12 @@
   #v(5pt)
 
   #sidebar-group([SKILLS AND TOOLS], (
-    ("Programming Languages:", ("Python", "Go", "TypeScript", "SQL")),
-    ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux", "Bash")),
+    ("Programming Languages:", ("Python", "Go", "SQL")),
+    ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
     ("Machine Learning and AI:", ("PyTorch", "LangGraph")),
     ("Databases:", ("PostgreSQL", "Redis")),
-    ("Data Platforms:", ("Apache Iceberg", "Apache Spark")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
+    ("Data Platforms:", ("Apache Iceberg", "Apache Spark")),
   ))
 ]
 
@@ -173,10 +173,10 @@
     (
       [Owned the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams, unifying dataset discovery, experiment tracking, model artifacts, and compute orchestration across the ML lifecycle.],
       [Engineered a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables for analytics and machine learning.],
-      [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration and built the platform's user interface with TypeScript and React.],
+      [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration and built the platform's user interface with React.],
       [Implemented GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads.],
       [Established a data lakehouse on Amazon S3 with Apache Iceberg and Spark, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
-      [Developed AI agents that enabled researchers to query internal scientific data in natural language and run reproducible sequence optimization workflows through a self-service interface.],
+      [Developed Model Context Protocol (MCP) servers exposing data query tools to AI agents, enabling researchers to query scientific data in natural language and run workflows through a self-service interface.],
       [Owned AWS infrastructure and platform operations with Terraform and GitHub Actions, covering EC2, IAM, VPC networking, instance lifecycle, and containerized deployments; implemented observability with Prometheus and Grafana.],
       [Built a data processing pipeline with Python that reduced data preparation from days to hours and increased throughput by 30x, producing standardized datasets for downstream ML workflows.],
     ),
