@@ -172,7 +172,7 @@
   #bullets(
     (
       [Owned the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams, unifying dataset discovery, experiment tracking, model artifacts, and compute orchestration across the ML lifecycle.],
-      [Engineered a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables for analytics and machine learning.],
+      [Engineered a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables; integrated Apache Comet to achieve a 2.5x overall query speedup.],
       [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration and built the platform's user interface with React.],
       [Implemented GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads; deployed an MLflow server to track model metrics and experiment logs.],
       [Established a data lakehouse on Amazon S3 with Apache Iceberg and Spark, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
