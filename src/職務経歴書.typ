@@ -132,9 +132,9 @@
 #bullets((
   [Python、Go、SQL],
   [AWS（EC2、S3、IAM、VPC）、Kubernetes、Docker、Terraform、Linux、Bash],
-  [PyTorch、LangGraph, MLflow],
+  [PyTorch、 MLflow],
   [Apache Iceberg、Apache Spark],
-  [PostgreSQL、Redis],
+  [PostgreSQL、Redis、Milvus],
   [GitHub Actions、Prometheus、Grafana],
 ))
 
@@ -149,7 +149,8 @@
   (
     [データセット探索、メタデータ管理、実験追跡、モデル成果物閲覧、GPU推論を一つのワークフローにつなぐ、GoベースのコントロールプレーンとREST APIの設計・運用、ReactによるプラットフォームUIの開発、およびモデルメトリクスと実験ログを追跡するMLflowサーバーの構築],
     [プラットフォームへのGPU推論オーケストレーションの実装、および研究者がモデル成果物を探索し、推論ワークロードを起動・管理するためのAPIの提供],
-    [Kubernetes上で一時的なApache Spark SQLジョブを起動し、S3上の生データを正規化・バージョン管理されたApache Icebergテーブルへ変換するデータ処理プレーンの構築],
+    [Kubernetes上で一時的なApache Spark SQLジョブを起動し、S3上の生データを正規化・バージョン管理されたApache Icebergテーブルへ変換するデータ処理プレーンの構築、およびApache Cometの導入によるクエリ性能の最適化],
+    [生物配列の埋め込みをApache Icebergに保存し、Milvusで類似検索するベクトル検索パイプラインの構築],
     [分析・機械学習ワークフローにおけるID追跡、重複排除、バージョン管理のためのデータモデルおよびルックアップテーブルの標準化],
     [JWT、OAuth2、パスワードハッシュによる認証・認可と、高トラフィックAPI向けRedisキャッシュの実装],
     [構造化ログ、ジョブログのライブストリーミング、Prometheusメトリクス、Grafanaダッシュボードによる可観測性の整備],
@@ -157,6 +158,7 @@
   (
     [データ管理、実験追跡、モデル成果物管理、GPU推論を共通プラットフォームに統合し、2チーム約10名の研究・エンジニアリング業務を支援],
     [PostgreSQLベースのシステムからレイクハウスへ段階的に移行し、10 TB超・50億件超のデータを管理できる基盤へ拡張],
+    [Apache Cometの導入により、クエリ処理全体を2.5倍高速化],
     [共通データモデルとバージョン管理により、分析・機械学習ワークフロー間でデータセットと実験結果を再現可能な形で利用できる仕組みを整備],
   ),
   [
@@ -164,7 +166,7 @@
     #env-group([フロントエンド], ("React", "Metabase"))
     #env-group([OS], ("Linux",))
     #env-group([サービス], ("Redis", "MLflow"))
-    #env-group([データ基盤], ("Apache Spark", "Apache Iceberg", "PostgreSQL"))
+    #env-group([データ基盤], ("Apache Spark", "Apache Iceberg", "PostgreSQL", "Milvus"))
     #env-group([インフラ], ("AWS", "Docker", "Kubernetes"))
     #env-group([CI/CD], ("GitHub Actions",))
     #env-group([メトリクス収集], ("Prometheus", "Grafana"))
@@ -211,7 +213,6 @@
   ),
   [
     #env-group([言語], ("Python", "SQL", "Bash"))
-    #env-group([AIエージェント], ("LangGraph",))
     #env-group([データ分析], ("DuckDB",))
     #env-group([インフラ], ("Docker",))
   ],
