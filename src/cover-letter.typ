@@ -65,13 +65,13 @@
 
   #v(20pt)
 
-  I am applying for the #role role at #company. As a Software Engineer at MOLCURE, I build scalable infrastructure and developer platforms for machine learning and scientific workloads. My work spans Kubernetes workload orchestration, Go control planes, GPU inference, distributed data systems, and AWS infrastructure.
+  I am applying for the #role role at #company. As a Software Engineer at MOLCURE, I build scalable infrastructure and developer platforms for machine learning and scientific workloads. My work focuses on dependable data platforms, model-serving systems, and research workflows.
 
   I own the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams. The platform unifies dataset discovery, experiment tracking, model artifacts, and compute orchestration, giving researchers a reproducible workflow from data preparation through model inference.
 
-  I designed and operated a Go control plane with REST APIs and built the platform's user interface with React. I also engineered a Kubernetes-based data processing plane that launches ephemeral Spark SQL workloads to transform raw S3 data into versioned Iceberg tables, integrating Apache Comet to achieve a 2.5x overall query speedup. For model workloads, I implemented GPU inference orchestration and deployed MLflow to track metrics and experiment logs.
+  I built the platform's control plane and user interface, along with a scalable data processing system that transforms raw data into versioned datasets. Improvements to its query path delivered a 2.5x overall speedup. I also built a shared LLM inference service now used by multiple agent and chat applications.
 
-  I established an Amazon S3 lakehouse with Apache Iceberg and Spark, managing 10+ TB of data and 5+ billion biological records as a versioned foundation for ML and analytics. I also built a biological sequence vector search pipeline using Iceberg for embedding storage and Milvus for similarity search, and developed MCP servers that let researchers query scientific data and run workflows through a self-service interface. A Python data processing pipeline I built reduced preparation time from days to hours and increased throughput by 30x. I own AWS infrastructure and operations with Terraform and GitHub Actions, and support reliability with Prometheus and Grafana.
+  I established a versioned data foundation supporting 10+ TB and 5+ billion biological records, and built biological sequence search and self-service AI workflows for researchers. A data processing pipeline I developed cut preparation time from days to hours and increased throughput by 30x. I also own the infrastructure and operational practices that keep these systems reliable and reproducible.
 
   My background in platform engineering, machine learning, bioinformatics, and medicine helps me translate researcher needs into dependable systems. I would bring to #company hands-on experience building both the infrastructure beneath AI workloads and the platform interfaces that make those workloads accessible and reproducible.
 

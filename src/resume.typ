@@ -137,7 +137,7 @@
   #sidebar-group([SKILLS AND TOOLS], (
     ("Programming Languages:", ("Python", "Go", "SQL")),
     ("Cloud and Infrastructure:", ("AWS (EC2, S3, IAM, VPC)", "Kubernetes", "Docker", "Terraform", "Linux")),
-    ("Machine Learning and AI:", ("PyTorch", "MLflow")),
+    ("Machine Learning and AI:", ("PyTorch", "MLflow", "vLLM")),
     ("Databases:", ("PostgreSQL", "Redis", "Milvus")),
     ("CI/CD and Observability:", ("GitHub Actions", "Prometheus", "Grafana")),
     ("Data Platforms:", ("Apache Iceberg", "Apache Spark")),
@@ -174,7 +174,8 @@
       [Owned the architecture and development of an internal data and AI platform used by 10 engineers and researchers across two teams, unifying dataset discovery, experiment tracking, model artifacts, and compute orchestration across the ML lifecycle.],
       [Designed, implemented, and operated a Go control plane with REST APIs for platform orchestration and built the platform's user interface with React.],
       [Engineered a Kubernetes-based data processing plane that launches ephemeral Apache Spark SQL workloads to transform raw S3 data into normalized, versioned Apache Iceberg tables; integrated Apache Comet to achieve a 2.5x overall query speedup.],
-      [Implemented GPU inference orchestration into the platform, providing APIs for researchers to discover model artifacts and launch and manage inference workloads; deployed an MLflow server to track model metrics and experiment logs.],
+      [Built a Kubernetes-hosted vLLM server to provide GPU-backed LLM inference to multiple agent applications and chat  interfaces.],
+      [Deployed an MLflow server to track model metrics and experiment logs.],
       [Owned AWS infrastructure and platform operations with Terraform and GitHub Actions, covering EC2, IAM, VPC networking, instance lifecycle, and containerized deployments; implemented observability with Prometheus and Grafana.],
       [Built a data processing pipeline with Python that reduced data preparation from days to hours and increased throughput by 30x, producing standardized datasets for downstream ML workflows.],
       [Established a data lakehouse on Amazon S3 with Apache Iceberg and Spark, managing 10+ TB and 5+ billion biological records as a versioned, reproducible data foundation for ML and analytics.],
